@@ -31,7 +31,7 @@ def main():
 
         labels = [
             f"{tracker_id} {model.model.names[class_id]} {confidence:0.2f}"
-            for _, confidence, class_id, tracker_id
+            for _, _, confidence, class_id, tracker_id
             in detections
         ]
 
